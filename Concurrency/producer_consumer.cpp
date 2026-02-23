@@ -2,18 +2,25 @@
 using namespace std;
 
 queue<string> q;
+mutex mtx;
+condition_variable cv;
 
 void consumer() {
     while(1) {
-        if(!q.empty()) {
-            cout << "READ: " << q.front();
-            q.pop();
-        }
+        unique_lock<mutex> lock(mtx);
+        cv.wait(lock, []() { return !q.empty(); });
+        
+        cout << "READ: " << q.front() << endl;
+        q.pop();
     }
 }
 
 void producer(string msg) {
-    q.push(msg);
+    {
+        unique_lock<mutex> lock(mtx);
+        q.push(msg);
+    }
+    cv.notify_one();
 }
 
 void input_reader() {
@@ -21,7 +28,6 @@ void input_reader() {
         cout << "ENTER: ";
         string x; cin >> x;
         producer(x);
-        cout << endl;
     }
 }
 
@@ -35,4 +41,6 @@ int main() {
 
 /*
 condition-variable notifies the consumer about the shared value
+mutex protects the queue from race conditions
+wait() releases lock, sleeps, and reacquires lock when notified
 */
