@@ -18,6 +18,15 @@ public:
     }
 };
 
+/*
+Use enums to enumerate values ... and avoid using magic numbers in the code
+*/
+enum class OrderStatus{
+    PLACED,
+    CONFIRMED,
+    PENDING
+};
+
 int main() {
     Parent* ch = new Child(); /* ENCAPSULATION */
     ch->func();
