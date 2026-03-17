@@ -18,11 +18,7 @@ public:
     }
 };
 
-
-
-
 int main() {
     Parent* ch = new Child(); /* ENCAPSULATION */
     ch->func();
 }
-
