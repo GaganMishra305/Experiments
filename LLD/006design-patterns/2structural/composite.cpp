@@ -1,4 +1,6 @@
-// Composite Pattern
+// COMPOSITE: allows us to treat individual objects and their compositions equally
+// Ex: a tree
+
 #include <iostream>
 #include <memory>
 #include <vector>

@@ -1,4 +1,6 @@
-// Bridge Pattern
+// BRIDGE: decouple an abstraction with its implementation
+// Ex: cross-platform application
+
 #include <iostream>
 #include <memory>
 using namespace std;

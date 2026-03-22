@@ -1,4 +1,6 @@
-// Adapter Pattern
+// ADAPTER: allows incompatible interfaces to work together
+// Ex: media player adapter
+
 #include <iostream>
 using namespace std;
 

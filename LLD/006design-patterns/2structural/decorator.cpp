@@ -1,4 +1,6 @@
-// Decorator Pattern
+// DECORATOR: dynamically add new behaviors on top of a object
+// Ex: Text renderer(you can bold it, underline it, change size and color)
+
 #include <iostream>
 #include <memory>
 using namespace std;

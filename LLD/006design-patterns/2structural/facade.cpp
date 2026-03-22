@@ -1,4 +1,6 @@
-// Facade Pattern
+// FACADE: single simplified interface to a complex subsystem
+// Ex: almost all api
+
 #include <iostream>
 using namespace std;
 
