@@ -1,4 +1,6 @@
-// Iterator Pattern
+// ITERATOR: standard way to access elements from a collection without revealing its structure
+// Ex: playlist
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,4 +1,6 @@
-// Command Pattern
+// COMMAND: request to a standalone object
+// Ex:  http request maker
+
 #include <iostream>
 #include <memory>
 using namespace std;

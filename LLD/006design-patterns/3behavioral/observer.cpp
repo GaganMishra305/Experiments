@@ -1,4 +1,6 @@
-// Observer Pattern
+// OBSERVER: change in the state of parent object notifies mutiple observers
+// Ex: notficiation system
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,4 +1,6 @@
-// Strategy Pattern
+// STRATEGY: allows us to use different algos for the same problem
+// Ex: payment processing
+
 #include <iostream>
 #include <memory>
 using namespace std;

@@ -1,4 +1,6 @@
-// State Pattern
+// STATE: object changes its behavior when its internal state changes
+// Ex: any game, any fsm
+
 #include <iostream>
 #include <memory>
 using namespace std;
