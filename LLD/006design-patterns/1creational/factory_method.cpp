@@ -1,4 +1,6 @@
-// Factory Method Pattern
+// FACTORY: returns instance of object depedning on the type
+// Ex: document-export system
+
 #include <iostream>
 #include <memory>
 using namespace std;

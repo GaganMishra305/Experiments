@@ -1,4 +1,6 @@
-// Abstract Factory Pattern
+// ABSTRACT-FACTORY: interface to create family of new objects
+// Ex: UI-libraries
+
 #include <iostream>
 #include <memory>
 using namespace std;

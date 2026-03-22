@@ -1,4 +1,6 @@
-// Builder Pattern
+// BUILDER: when there are too many parameters
+// Ex: HttpBuilder, any complex object
+
 #include <iostream>
 #include <string>
 using namespace std;

@@ -1,4 +1,6 @@
-// Prototype Pattern
+// PROTOTYPE: new objects by cloning other objects
+// Ex: making enemies in a game (shallow-copy vs deep-copy)
+    
 #include <iostream>
 #include <memory>
 using namespace std;

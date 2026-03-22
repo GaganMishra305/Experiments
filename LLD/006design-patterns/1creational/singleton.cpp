@@ -1,4 +1,6 @@
-// Singleton Pattern
+// SINGLETON: when a single-instance is needed at one tiem
+// Ex: thread pools, caches, loggers
+
 #include <iostream>
 using namespace std;
 
